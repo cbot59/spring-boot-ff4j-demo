@@ -327,3 +327,4 @@ gradle-app.setting
 # JDT-specific (Eclipse Java Development Tools)
 
 # End of https://www.toptal.com/developers/gitignore/api/java,visualstudiocode,intellij+iml,maven,gradle,eclipse,netbeans,macos,linux,windows
+/images/
