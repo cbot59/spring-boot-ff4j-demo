@@ -4,17 +4,17 @@ Spring Boot FF4J Demo is a project used to be a poc (proof-of-concept) to implem
 
 There are several use cases will be develop in order to pass the poc based on the requirements.
 
-[x] Simple feature toggle
+- [x] Simple feature toggle
 
-[ ] Implement RBAC (Role Based Access Control)
+- [ ] Implement RBAC (Role Based Access Control)
 
-[ ] Persist feature on MySQL
+- [ ] Persist feature on MySQL
 
-[ ] Persist feature on Redis
+- [ ] Persist feature on Redis
 
-[ ] Implement cache
+- [ ] Implement cache
 
-[ ] ...
+- [ ] TBD
 
 ## Prerequisites
 
@@ -32,15 +32,19 @@ mvnw spring-boot:run
 ## Preview
 
 FF4J home
+
 ![FF4J home](https://i.ibb.co/HqMbtdr/ff4j-home.png)
 
 FF4J feature page
+
 ![FF4J feature page](https://i.ibb.co/QcVmVTK/ff4j-feature-list.png)
 
 Simple toggle ON
+
 ![Simple toggle ON](https://i.ibb.co/RpvgnmV/simple-toggle-on.png)
 
 Simple toggle OFF
+
 ![Simple toggle OFF](https://i.ibb.co/t3MtDn0/simple-toggle-off.png)
 
 ## Contributing
