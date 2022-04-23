@@ -29,6 +29,16 @@ Project are using [maven](https://maven.apache.org/) to run
 mvnw spring-boot:run
 ```
 
+## Testing
+
+1. Simple toggle
+
+```bash
+curl -X GET --location "http://localhost:8080/api/customers"
+```
+
+1. Reserved for future use case
+
 ## Preview
 
 FF4J home
