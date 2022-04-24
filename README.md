@@ -35,13 +35,31 @@ mvnw spring-boot:run
 
 ## Testing
 
-1. Simple toggle
+* FF4J web console
+
+1. Open browser
+2. Go to http://localhost:8080/ff4j-web-console/
+3. Toggle any feature we would like to enable/disable
+
+* Simple toggle
+
+Request a `customer` feature as a `customer` user
 
 ```bash
-curl -X GET --location "http://localhost:8080/api/customers"
+curl -X GET --location "http://localhost:8080/api/customers" \
+    -H "Accept: application/json" \
+    -H "Authorization: Basic Y3VzdG9tZXI6Y3VzdG9tZXI="
 ```
 
-1. Reserved for future use case
+* RBAC based toggle
+
+Request a `seller` feature but authorized as a `customer` user
+
+```bash
+curl -X GET --location "http://localhost:8080/api/sellers" \
+    -H "Accept: application/json" \
+    -H "Authorization: Basic Y3VzdG9tZXI6Y3VzdG9tZXI="
+```
 
 ## Preview
 
