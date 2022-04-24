@@ -19,7 +19,7 @@ class CustomerController {
 
     @GetMapping
     List<CustomerDto> getCustomers() {
-        if(ff4j.check("getAllCustomer")) {
+        if(ff4j.check(FeatureConstants.FEAT_GET_ALL_CUSTOMER)) {
             return service.getCustomers();
         }
 

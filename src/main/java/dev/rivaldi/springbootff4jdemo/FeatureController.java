@@ -1,5 +1,6 @@
 package dev.rivaldi.springbootff4jdemo;
 
+import java.util.Collections;
 import javax.annotation.PostConstruct;
 
 import lombok.RequiredArgsConstructor;
@@ -15,8 +16,12 @@ class FeatureController {
 
     @PostConstruct
     void populateFeature() {
-        if (!ff4j.exist(FeatureConstants.GET_ALL_CUSTOMER)) {
-            ff4j.createFeature(new Feature(FeatureConstants.GET_ALL_CUSTOMER, true));
+        if (!ff4j.exist(FeatureConstants.FEAT_GET_ALL_CUSTOMER)) {
+            Feature getAllCustomersFeature = new Feature(FeatureConstants.FEAT_GET_ALL_CUSTOMER, true, "Get All Customers API",
+                FeatureConstants.GROUP_API,
+                Collections.singletonList(FeatureConstants.AUTH_CUSTOMER)
+            );
+            ff4j.createFeature(getAllCustomersFeature);
         }
     }
 }
