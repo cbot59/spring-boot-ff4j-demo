@@ -6,7 +6,7 @@ There are several use cases will be developed in order to pass the poc based on 
 
 - [x] Simple feature toggle
 
-- [ ] Implement RBAC (Role Based Access Control)
+- [x] Implement RBAC (Role Based Access Control)
 
 - [ ] Persist feature on MySQL
 
@@ -60,6 +60,12 @@ Simple toggle ON
 Simple toggle OFF
 
 ![Simple toggle OFF](https://i.ibb.co/t3MtDn0/simple-toggle-off.png)
+
+RBAC based toggle
+
+*Open seller API while logged in as customer
+
+![RBAC based toggle](https://i.ibb.co/fDLd7tw/rbac-toggle.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
