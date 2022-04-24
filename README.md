@@ -16,6 +16,8 @@ There are several use cases will be developed in order to pass the poc based on 
 
 - [ ] Separate FF4j web and main application
 
+- [ ] Implement AOP based check
+
 - [ ] TBD
 
 ## Prerequisites
