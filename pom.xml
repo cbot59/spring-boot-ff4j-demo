@@ -16,6 +16,7 @@
     <description>spring-boot-ff4j-demo</description>
     <properties>
         <java.version>1.8</java.version>
+        <ff4j.version>1.8.12</ff4j.version>
     </properties>
     <dependencies>
         <dependency>
@@ -41,19 +42,19 @@
         <dependency>
             <groupId>org.ff4j</groupId>
             <artifactId>ff4j-core</artifactId>
-            <version>1.8.12</version>
+            <version>${ff4j.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.ff4j/ff4j-web -->
         <dependency>
             <groupId>org.ff4j</groupId>
             <artifactId>ff4j-web</artifactId>
-            <version>1.8.12</version>
+            <version>${ff4j.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.ff4j/ff4j-security-spring -->
         <dependency>
             <groupId>org.ff4j</groupId>
             <artifactId>ff4j-security-spring</artifactId>
-            <version>1.8.12</version>
+            <version>${ff4j.version}</version>
         </dependency>
 
         <dependency>
