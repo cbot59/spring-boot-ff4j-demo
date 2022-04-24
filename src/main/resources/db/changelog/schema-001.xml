@@ -1,0 +1,87 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.10.xsd">
+    <changeSet author="rivaldi (generated)" id="1650799689152-1">
+        <createTable tableName="FF4J_AUDIT">
+            <column name="EVT_UUID" type="VARCHAR(40)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column defaultValueComputed="CURRENT_TIMESTAMP" name="EVT_TIME" type="timestamp">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="EVT_TYPE" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVT_NAME" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVT_ACTION" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVT_HOSTNAME" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVT_SOURCE" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVT_DURATION" type="INT"/>
+            <column name="EVT_USER" type="VARCHAR(30)"/>
+            <column name="EVT_VALUE" type="VARCHAR(100)"/>
+            <column name="EVT_KEYS" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="rivaldi (generated)" id="1650799689152-2">
+        <createTable tableName="FF4J_CUSTOM_PROPERTIES">
+            <column name="PROPERTY_ID" type="VARCHAR(100)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="CLAZZ" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CURRENTVALUE" type="VARCHAR(255)"/>
+            <column name="FIXEDVALUES" type="VARCHAR(1000)"/>
+            <column name="DESCRIPTION" type="VARCHAR(1000)"/>
+            <column name="FEAT_UID" type="VARCHAR(100)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="rivaldi (generated)" id="1650799689152-3">
+        <createTable tableName="FF4J_FEATURES">
+            <column name="FEAT_UID" type="VARCHAR(100)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="ENABLE" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DESCRIPTION" type="VARCHAR(1000)"/>
+            <column name="STRATEGY" type="VARCHAR(1000)"/>
+            <column name="EXPRESSION" type="VARCHAR(255)"/>
+            <column name="GROUPNAME" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="rivaldi (generated)" id="1650799689152-4">
+        <createTable tableName="FF4J_PROPERTIES">
+            <column name="PROPERTY_ID" type="VARCHAR(100)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="CLAZZ" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CURRENTVALUE" type="VARCHAR(255)"/>
+            <column name="FIXEDVALUES" type="VARCHAR(1000)"/>
+            <column name="DESCRIPTION" type="VARCHAR(1000)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="rivaldi (generated)" id="1650799689152-5">
+        <createTable tableName="FF4J_ROLES">
+            <column name="FEAT_UID" type="VARCHAR(100)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="ROLE_NAME" type="VARCHAR(100)">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

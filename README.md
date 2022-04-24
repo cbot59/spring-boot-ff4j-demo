@@ -8,7 +8,7 @@ There are several use cases will be developed in order to pass the poc based on 
 
 - [x] Implement RBAC (Role Based Access Control)
 
-- [ ] Persist feature on MySQL
+- [x] Persist feature on MySQL
 
 - [ ] Persist feature on Redis
 
