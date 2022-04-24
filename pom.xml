@@ -35,6 +35,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.ff4j</groupId>
             <artifactId>ff4j-core</artifactId>
             <version>1.8.12</version>
@@ -43,6 +47,12 @@
         <dependency>
             <groupId>org.ff4j</groupId>
             <artifactId>ff4j-web</artifactId>
+            <version>1.8.12</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.ff4j/ff4j-security-spring -->
+        <dependency>
+            <groupId>org.ff4j</groupId>
+            <artifactId>ff4j-security-spring</artifactId>
             <version>1.8.12</version>
         </dependency>
 
