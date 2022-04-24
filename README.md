@@ -2,7 +2,7 @@
 
 Spring Boot FF4J Demo is a project used to be a poc (proof-of-concept) to implement a feature flag on [Klikpajak](https://my.klikpajak.id/) project with the help of [FF4J](https://github.com/ff4j/ff4j)
 
-There are several use cases will be develop in order to pass the poc based on the requirements.
+There are several use cases will be developed in order to pass the poc based on the requirements.
 
 - [x] Simple feature toggle
 
@@ -13,6 +13,8 @@ There are several use cases will be develop in order to pass the poc based on th
 - [ ] Persist feature on Redis
 
 - [ ] Implement cache
+
+- [ ] Separate FF4j web and main application
 
 - [ ] TBD
 
